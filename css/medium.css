@@ -1,0 +1,33 @@
+@media (min-width: 32.5em){
+    :root {
+        --card-width: 100%;
+    }
+
+    #headerContent{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: auto;
+        max-width: var(--card-width);
+        background-color: var(--primary-color);
+        padding: 1em;
+        gap: 1em;
+        margin: 0 auto;
+    }
+
+    #headerContent img{
+        width: 100%;
+        height: auto;
+        /*align-self: center;
+        justify-self: center;
+        margin: 0 auto;*/
+    }
+    
+    #headerContent h1{
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        font-family: var(--heading-font);
+        color: var(--headline-color-on-color);
+    }
+}
