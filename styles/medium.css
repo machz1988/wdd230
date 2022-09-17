@@ -1,6 +1,6 @@
 @media (min-width: 32.5em){
     :root {
-        --card-width: 100%;
+        --card-width: 600px;
     }
 
     #headerContent{
