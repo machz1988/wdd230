@@ -24,9 +24,9 @@
     
     #headerContent h1{
         width: 100%;
-        align-self: center;
+        /*align-self: center;
         justify-self: center;
-        text-align: center;
+        text-align: center;*/
         font-family: var(--heading-font);
         color: var(--headline-color-on-color);
     }
