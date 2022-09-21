@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=PT+Mono&family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Combo&family=Lemonada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #383D3B;
@@ -25,7 +26,7 @@
     --nav-hover-link-color: #383D3B;
     --nav-hover-background-color: #92DCE5;
 
-    --card-width: 600px;
+    --card-width: 100%;
   }
 
 #headerContent{
@@ -33,12 +34,9 @@
     grid-template-rows: 200px 1fr;
     max-width: var(--card-width);
     background-color: var(--primary-color);
+    /*margin-top: 1em;*/
     padding: 1em;
     gap: 1em;
-    margin: 0 auto;
-    border-radius: 10px;
-    /*margin-top: 1em;*/
-    box-shadow: 5px 5px 6px var(--primary-color);
 }
 
 #headerContent img{
@@ -46,8 +44,7 @@
     /*align-self: center;
     justify-self: center;*/
     margin: 0 auto;
-    border-radius: 50px;
-    box-shadow: 2px 2px 6px var(--secondary-color);
+    border-radius: 100px;
 }
 
 #headerContent h1{
@@ -57,7 +54,6 @@
     text-align: center;
     font-family: var(--heading-font);
     color: var(--headline-color-on-color);
-    text-shadow: 2px 2px 6px var(--headline-color-on-color);
 }
 
 #mainContent{
@@ -65,10 +61,10 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 1em;
-    margin: 0 auto;
+    /*margin: 0 auto;
     border-radius: 10px;
     margin-top: 10px;
-    box-shadow: 5px 5px 6px var(--primary-color);
+    box-shadow: 5px 5px 6px var(--primary-color);*/
 }
 
 #mainContent h2{
@@ -90,9 +86,9 @@
     padding: 1em;
     color: var(--secondary-color);
     text-align: center;
-    margin: 0 auto;
+    /*margin: 0 auto;
     border-radius: 10px;
     margin-top: 10px;
-    box-shadow: 5px 5px 6px var(--primary-color);
+    box-shadow: 5px 5px 6px var(--primary-color);*/
 }
 
