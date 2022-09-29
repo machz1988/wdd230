@@ -140,3 +140,15 @@ p{
 .card3 p{
     color: var(--paragraph-color-on-white);
 }
+
+#footerContent{
+    display: block;
+    background-color: var(--primary-color);
+    margin: 0 1em 0 1em;
+    padding: 0.2em;
+} 
+
+#footerContent p{
+    color: var(--headline-color-on-color);
+    text-align: center;
+}
