@@ -31,7 +31,7 @@ footer {
 h1 {
 	font-size: 2rem;
 }
-h2 {
+h2, h3 {
 	padding: .5rem;
 	color: #536878;
 }
@@ -96,4 +96,55 @@ footer {
 	padding: 1rem;
 	justify-content: space-between;
 	font-weight: 700;
+}
+
+.colors {
+	width: 100%;
+	min-width: 350px;
+	margin-top: 1rem;
+	text-align: center;
+}
+.colors th {
+	background-color: #999;
+	padding: 0.5rem;
+}
+.colors td{
+	width: 20%;
+	height: 3em;
+	padding: 0.5rem;
+}
+
+.primary {
+	background-color: #1C1F33;
+	color: #fff;
+}
+.secondary {
+	background-color: #D72638;
+	color: #fff;
+}
+.accent1 {
+	background-color: #FF8906;
+	color: #fff;
+}
+.accent2{
+	background-color: #689689;
+	color: #fff;
+}
+
+.text_color{
+	background-color: #FFFFFF;
+}
+
+.heading_font{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.paragraph_font{
+	font-family: 'Lato', sans-serif;
+}
+
+.colored_paragraph{
+	background-color: #1C1F33;
+	color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
 }
