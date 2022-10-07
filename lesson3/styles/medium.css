@@ -1,0 +1,17 @@
+@media (min-width: 32em){
+    nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+    
+	main picture {
+		display: block;
+	}
+}
