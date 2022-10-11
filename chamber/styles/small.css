@@ -1,0 +1,168 @@
+:root{
+    --primary-color: #1C1F33;
+    --secondary-color: #D72638;
+    --accent1-color: #DDD78D;
+    --accent2-color: #FF8906;
+    --text-color: #fff;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+#nameEnterprise{
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: 0.5rem;
+}
+
+#nameEnterprise img{
+    height: 2rem;
+    padding-right: 00.5rem;
+}
+
+#nameEnterprise h1{
+    margin: 0;
+}
+
+#socialMedia{
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+#socialMedia img{
+    height: 2rem;
+    padding-right: 00.5rem;
+}
+
+#hamButton{
+    grid-column-start: 3;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: end;
+    padding: 0.5rem;
+}
+
+#hamButton span:nth-child(1){
+    display: block;
+}
+
+#hamButton span:nth-child(2){
+    display: none;
+}
+
+#hamButton.open span:nth-child(1){
+    display: none;
+}
+
+#hamButton.open span:nth-child(2){
+    display: block;
+}
+
+header nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+}
+
+#mainNav{
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mainNav.open {
+    display: block;
+}
+
+#mainNav li a{
+    display: block;
+    padding: 1rem 2vw;
+    text-decoration: none;
+    color: var(--text-color);
+    border-top: 1px solid var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+#mainNav li.active a{
+    background-color: var(--accent2-color);
+}
+
+#mainNav li a:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+#date{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    background-color: var(--text-color);
+    padding: 0.5rem;
+    width: auto;
+    text-align: center;
+    color: var(--primary-color);
+    border: 0.5rem solid var(--primary-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#callToAction, #event, #weather, #release, #spotlights{
+    height: 200px;
+    /*background-color: var(--accent1-color);
+    color: var(--text-color);*/
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#spotlights{
+    display: flex;
+}
+
+#spotlight1{
+    width: 50%;
+}
+
+#spotlight2{
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+}
+
+footer img{
+    height: 8rem;
+    margin-top: 0.5rem;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+#developerData{
+    border-top: 1px solid var(--accent2-color);
+    padding-top: 00.5rem;
+    padding-bottom: 00.5rem;
+}
+

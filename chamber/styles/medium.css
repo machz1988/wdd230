@@ -1,0 +1,60 @@
+@media (min-width: 32rem) {
+    header{
+        margin: 0.5rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        margin: 0.5rem;
+    }
+
+    #callToAction{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #release{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #spotlights{
+        grid-row-start: 3;
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #event{
+        grid-row-start: 4;
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    #weather{
+        grid-row-start: 4;
+        grid-row-start: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        align-items: center;
+        margin: 0.5rem;
+    }
+
+    #developerData{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
