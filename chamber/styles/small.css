@@ -32,7 +32,8 @@ header{
 
 #nameEnterprise img{
     height: 2rem;
-    padding-right: 00.5rem;
+    margin-right: 0.5rem;
+    border-radius: 1rem;
 }
 
 #nameEnterprise h1{
@@ -160,6 +161,7 @@ footer{
 footer img{
     height: 8rem;
     margin-top: 0.5rem;
+    border-radius: 4rem;
 }
 
 footer div{
