@@ -1,9 +1,11 @@
 :root{
     --primary-color: #1C1F33;
     --secondary-color: #D72638;
+    --tertiary-color: #C2D3CD;
     --accent1-color: #DDD78D;
     --accent2-color: #FF8906;
     --text-color: #fff;
+    --white-color: #fff;
 }
 
 body{
@@ -118,7 +120,7 @@ header nav{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
-    background-color: var(--text-color);
+    background-color: var(--white-color);
     padding: 0.5rem;
     width: auto;
     text-align: center;
@@ -131,23 +133,152 @@ main{
     flex-direction: column;
 }
 
-#callToAction, #event, #weather, #release, #spotlights{
+/*#callToAction, #event, #weather, #release, #spotlights{
     height: 200px;
-    /*background-color: var(--accent1-color);
-    color: var(--text-color);*/
+    background-color: var(--accent1-color);
+    color: var(--text-color);
     border-bottom: 1px solid var(--primary-color);
+}*/
+
+#callToAction{
+    position: relative;
+    background-color: var(--white-color);
+}
+
+#callToAction img{
+    width: 100%;
+}
+
+#callToAction h2{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    margin: 0;
+    text-shadow: 0.5rem 0.5rem 0.5rem var(--accent1-color);
+}
+
+#callToAction a{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    margin: 0;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+#callToAction a:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+#event{
+    background-color: var(--white-color);
+    width: auto;
+    border-bottom: 0.1rem solid var(--primary-color);
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#event img{
+    height: 4rem;
+}
+
+#event a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#event a:hover{
+    color: var(--accent1-color);
+}
+
+#weather{
+    width: auto;
+    border-bottom: 0.1rem solid var(--primary-color);
+    padding: 0 1rem 0 1rem;
+    background-color: var(--tertiary-color);
+}
+
+#weather div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#weather img{
+    height: 8rem;
+}
+
+#weather span{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+#weather h3{
+    text-align: end;
+    border-bottom: 0.05rem dashed var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.release {
+    width: auto;
+    border-bottom: 0.1rem solid var(--primary-color);
+    padding: 0 1rem 0 1rem;
+    background-color: var(--white-color);
 }
 
 #spotlights{
     display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: var(--tertiary-color)
 }
 
-#spotlight1{
-    width: 50%;
+.spotlight{
+    text-align: center;
 }
 
-#spotlight2{
-    width: 50%;
+.spotlight:nth-child(1){
+    border-right: 0.05rem dashed var(--primary-color);
+}
+
+.spotlight:nth-child(3){
+    display: none;
+}
+
+#spotlights h2{
+    margin-top: 0rem;
+}
+
+#spotlights img{
+    max-width: 10rem;
+}
+
+#joinUs{
+    display: none;
+    padding: 1rem;
+}
+
+#joinUs a{
+    /*position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    margin: 0;*/
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+#joinUs a:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 footer{
@@ -171,7 +302,7 @@ footer div{
 }
 
 #developerData{
-    border-top: 1px solid var(--accent2-color);
+    border-top: 0.05rem dashed var(--tertiary-color);
     padding-top: 00.5rem;
     padding-bottom: 00.5rem;
 }
