@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Progressive loading of images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Progressive loading of images practice">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <h1>Progressive loading of images example</h1>
+    </header>
+    <main>
+        <picture class="lazyImage">
+            <img src="https://via.placeholder.com/300x400.jpg" 
+            data-src="images/image1.jpg"
+            alt="a random image"
+            loading="lazy">
+        </picture>
+        <picture class="lazyImage">
+            <img src="https://via.placeholder.com/300x400.jpg" 
+            data-src="images/image2.jpg"
+            alt="a random image"
+            loading="lazy">    
+        </picture>
+        <picture class="lazyImage">
+            <img src="https://via.placeholder.com/300x400.jpg" 
+            data-src="images/image3.jpg"
+            alt="a random image"
+            loading="lazy">
+        </picture>
+        <picture class="lazyImage">
+            <img src="https://via.placeholder.com/300x400.jpg" 
+            data-src="images/image4.jpg"
+            alt="a random image"
+            loading="lazy">
+        </picture>
+        <picture class="lazyImage">
+            <img src="https://via.placeholder.com/300x400.jpg" 
+            data-src="images/image5.jpg"
+            alt="a random image"
+            loading="lazy">
+        </picture>
+        <picture class="lazyImage">
+            <img src="https://via.placeholder.com/300x400.jpg" 
+            data-src="images/image6.jpg"
+            alt="a random image"
+            loading="lazy">
+        </picture>
+    </main>
+    <footer>
+        <div id="developerData">
+            <span>&copy;<span id="year"></span>Progressive loading of images</span>
+            <span>Manuel Cipriano</span>
+            <span>WDD 230</span>
+            <span>Last Modification: <span id="lastModified"></span></span>
+        </div>
+    </footer>
+    <script src="scripts/last_modified.js"></script>
+    <script src="scripts/lazy_loading.js" defer></script>
+</body>
+</html>
