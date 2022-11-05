@@ -307,3 +307,7 @@ footer div{
     padding-bottom: 00.5rem;
 }
 
+.discoverMain{
+    display: flex;
+    flex-direction: column;
+}
