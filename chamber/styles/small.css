@@ -311,3 +311,31 @@ footer div{
     display: flex;
     flex-direction: column;
 }
+
+.discoverImage img[data-src] {
+    filter: blur(0.2rem);
+}
+  
+.discoverImage img {
+    filter: blur(0rem);
+    transition: filter 2s;
+}
+
+.discoverSection{
+    border-bottom: 0.1rem solid var(--primary-color);
+    padding: 1rem;
+}
+
+.discoverSection:nth-child( odd ) {
+    background-color: var(--tertiary-color);
+}
+
+.discoverSection h2, h3{
+    margin: 0;
+}
+
+.discoverArticle{
+    border-bottom: 0.1rem solid var(--primary-color);
+    text-align: center;
+    padding-bottom: 1rem;
+}

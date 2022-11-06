@@ -89,32 +89,59 @@
         </section>
         </div>
         <div class="dicoverImages">
-        <article>
+        <article class="discoverArticle">
             <picture class="discoverImage">
-                <source media="(max-width: 512px)" srcset="images/churipo-small.jpg">
-                <source media="(max-width: 960px)" srcset="images/churipo-medium.jpg">
-                <img src="images/churipo-large.jpg" alt="photo of churipo">
+                <img src="https://via.placeholder.com/512x384.jpg"
+                data-src="images/churipo-small.jpg"
+                alt="photo of churipo" loading="lazy">
             </picture>
             <h2>Churipo</h2>
             <p>Traditional recipe</p>
         </article>
-        <article>
+        <article class="discoverArticle">
             <picture class="discoverImage">
-                <source media="(max-width: 512px)" srcset="images/handicrafts-small.jpg">
-                <source media="(max-width: 960px)" srcset="images/handicrafts-medium.jpg">
-                <img src="images/handicrafts-large.jpg" alt="photo of handicrafts">
+                <img src="https://via.placeholder.com/512x408.jpg"
+                data-src="images/handicrafts-small.jpg" 
+                alt="photo of handicrafts" loading="lazy">
             </picture>
             <h2>Clay crafts</h2>
             <p>From Huancito</p>
         </article>
-        <article>
+        <article class="discoverArticle">
             <picture class="discoverImage">
-                <source media="(max-width: 512px)" srcset="images/corn-field-small.jpg">
-                <source media="(max-width: 960px)" srcset="images/corn-field-medium.jpg">
-                <img src="images/corn-field-large.jpg" alt="photo of a corn field">
+                <img src="https://via.placeholder.com/512x309.jpg"
+                data-src="images/corn-field-small.jpg" 
+                alt="photo of a corn field" loading="lazy">
             </picture>
             <h2>Corn field</h2>
             <p>Inherit of our fore parents</p>
+        </article>
+        <article class="discoverArticle">
+            <picture class="discoverImage">
+                <img src="https://via.placeholder.com/512x390.jpg"
+                data-src="images/banda-real-small.jpg" 
+                alt="photo of banda real" loading="lazy">
+            </picture>
+            <h2>Banda Real de Ichan</h2>
+            <p>Traditional music</p>
+        </article>
+        <article class="discoverArticle">
+            <picture class="discoverImage">
+                <img src="https://via.placeholder.com/512x358.jpg"
+                data-src="images/dress-small.jpg" 
+                alt="photo of people dressed traditionally" loading="lazy">
+            </picture>
+            <h2>Traditional dress</h2>
+            <p>Colored and elegant</p>
+        </article>
+        <article class="discoverArticle">
+            <picture class="discoverImage">
+                <img src="https://via.placeholder.com/512x341.jpg" 
+                data-src="images/chilchota-small.jpg" 
+                alt="photo of Chilchota's waterhole" loading="lazy">
+            </picture>
+            <h2>Chilchota's waterhole</h2>
+            <p>A place to spend time with the family</p>
         </article>
         </div>
     </main>
@@ -135,8 +162,10 @@
             <span>Manuel Cipriano</span>
             <span>WDD 230 Project</span>
             <span>Last Modification: <span id="lastModified"></span></span>
+            <p>Your last visit was: <span class="lastVisit"> days ago</span></p>
         </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/lazy_loading.js" defer></script>
 </body>
 </html>

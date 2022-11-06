@@ -73,7 +73,20 @@
         grid-column-start: 1;
         grid-column-end: 4;
     }
-/*
-    
-*/
+
+    .discoverSection{
+        border: none;
+    }
+
+    .discoverSection:nth-child(odd){
+        background-color: var(--white-color);
+    }
+
+    .discoverArticle:nth-child(1){
+        border-top: 0.1rem solid var(--primary-color);
+    }
+
+    .discoverImage img:hover {
+        box-shadow: 0 0 2rem var(--primary-color);
+    }
 }
