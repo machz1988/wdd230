@@ -319,6 +319,7 @@ footer div{
 .discoverImage img {
     filter: blur(0rem);
     transition: filter 2s;
+    width: 100%;
 }
 
 .discoverSection{
