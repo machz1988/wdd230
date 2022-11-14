@@ -146,6 +146,10 @@
         flex-direction: column;
     }
 
+    .discoverImage img{
+        width: 60%;
+    }
+
     .discoverArticle:nth-child(1){
         border: 0.05rem dashed var(--primary-color);
         padding: 1rem;

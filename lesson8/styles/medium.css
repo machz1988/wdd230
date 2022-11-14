@@ -1,0 +1,10 @@
+@media (min-width: 32rem) {
+    main{
+        padding: 1rem;
+    }
+
+    table{
+        margin: 0 auto;
+        max-width: 35rem;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Table Build</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HTML Table Build Example">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/tablecss.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Table Build</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Table 1: Wasatch Sales</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" scope="colgroup">Sales</th>
+                </tr>
+                <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>July</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td class="highlight">8,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>4,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>2,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="developerData">
+            <span>&copy;<span id="year"></span> HTML Table Build</Table></span>
+            <span>Manuel Cipriano</span>
+            <span>WDD 230 Project</span>
+            <span>Last Modification: <span id="lastModified"></span></span>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
