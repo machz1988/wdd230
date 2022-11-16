@@ -31,18 +31,20 @@ const lastVisitDisplay = document.querySelector(".lastVisit");
 
 // get the stored value in localStorage
 //let lastVisit = Number(window.localStorage.getItem("last-visit"));
-let dateLastVisit = Date(window.localStorage.getItem("date-last-visit"))
+let dateLastVisit = Number(window.localStorage.getItem("date-last-visit"))
 
+const today = Date.now();
 // determine if this is the first visit or display the number of visits.
-if (dateLastVisit <= now) {
-    const diffTime = Math.abs(now - dateLastVisit);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-	lastVisitDisplay.textContent = diffDays;
+if (dateLastVisit <= today) {
+    const diffTime = today - dateLastVisit;
+    const diffDays = (diffTime / 1000 / 60 / 60 / 24).toFixed(0); 
+	//window.localStorage.setItem("date-last-visit", now);
+    lastVisitDisplay.textContent = `${diffDays} days ago`;
 } else {
 	lastVisitDisplay.textContent = `This is your first visit!`;
 }
 
 // increment the number of visits.
-dateLastVisit = now;
+dateLastVisit = today;
 // store the new number of visits value
 window.localStorage.setItem("date-last-visit", dateLastVisit);

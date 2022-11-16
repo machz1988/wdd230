@@ -340,3 +340,44 @@ footer div{
     text-align: center;
     padding-bottom: 1rem;
 }
+
+.join-main{
+    display: flex;
+}
+
+.form-join{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.2rem;
+    color: var(--primary-color);
+}
+
+.form-join input{
+    padding: 0.5rem;
+}
+
+.form-join textarea{
+    padding: 0.5rem;
+}
+
+.form-join label{
+    padding-top: 1rem;
+}
+
+.join-h1{
+    margin: 0;
+    padding: 1rem 1rem 0 1rem;
+}
+
+#submit{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-color: var(--accent2-color);
+    margin-top: 1rem;
+}
+
+#submit:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
