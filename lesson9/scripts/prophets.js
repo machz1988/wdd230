@@ -9,6 +9,31 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const prophets = jsonObject['prophets'];
     prophets.forEach(displayProphets);
+    let imagesToLoad = document.querySelectorAll("img[data-src]");
+    const loadImages = (image) => {
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {
+        image.removeAttribute("data-src");
+    };
+    };
+
+    if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+        if (item.isIntersecting) {
+            loadImages(item.target);
+            observer.unobserve(item.target);
+        }
+        });
+    });
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+    } else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+    }
 });
 
 function displayProphets(prophet){
@@ -25,7 +50,8 @@ function displayProphets(prophet){
     p_2.textContent = `Place of Birth: ${prophet.birthplace}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    portrait.setAttribute('src', prophet.imageurl);
+    portrait.setAttribute('src', "https://via.placeholder.com/300x400.jpg");
+    portrait.setAttribute('data-src', prophet.imageurl);
     portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order} Latter-day President`);
     portrait.setAttribute('loading', 'lazy');
 
@@ -38,6 +64,8 @@ function displayProphets(prophet){
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
 }
+
+
 
 // derive the current date using a date object
 const now = new Date();
