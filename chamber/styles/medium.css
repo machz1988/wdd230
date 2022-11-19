@@ -121,4 +121,50 @@
         padding-left: 1rem;
         margin-bottom: 0;
     }
+
+    .directoryMain{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 40rem) {
+    #grid, #list{
+        margin-bottom: 0;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .grid section{
+        border: 0.1rem solid var(--primary-color);
+        box-shadow: 0.3rem 0.3rem 0.5rem 0rem var(--primary-color);
+        border-radius: 1rem;
+    }
+
+    .list{
+        padding: 1rem;
+    }
+
+    .list section{
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        column-gap: 1rem;
+        border: 0.1rem solid var(--primary-color);
+        border-bottom: 0rem;
+    }
+
+    .list section:nth-child(11){
+        border-bottom: 0.1rem solid var(--primary-color);
+    }
+
+    .list img{
+        max-width: 8rem;
+        display: block;
+        grid-row: 1/5;
+        align-self: center;
+    }
 }

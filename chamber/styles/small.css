@@ -381,3 +381,66 @@ footer div{
     background-color: var(--accent1-color);
     color: var(--primary-color);
 }
+
+.menu{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#grid, #list{
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-color: var(--accent2-color);
+    margin-bottom: 1rem;
+}
+
+#grid{
+    margin-right: 1rem;
+}
+
+#grid:hover, #list:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid section{
+    padding: 1rem;
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+.grid img{
+    max-width: 10rem;
+    padding-bottom: 1rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.list section{
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    column-gap: 0.5rem;
+    border-top: 0.1rem solid var(--primary-color);
+    padding: 0.5rem;
+}
+
+.list p{
+    margin: 0;
+}
+
+.list img{
+    max-width: 4rem;
+    display: block;
+    grid-row: 1/5;
+    align-self: center;
+}

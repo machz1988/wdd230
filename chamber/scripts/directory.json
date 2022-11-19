@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Eratzin Solutions",
+        "address": "1 May 5th Street, Ichan Michoacan 59792",
+        "phone_number": "(351) 304 - 4002",
+        "web_page": "https://eratzinsolutions.com",
+        "logo": "./images/eratzin-solutions.png"
+    },
+    {
+        "name": "Korita Handicrafts",
+        "address": "57 Lopez Mateos Street, Ichan Michoacan 59792",
+        "phone_number": "(33) 1367 - 6900",
+        "web_page": "https://koritahandicrafts.com",
+        "logo": "./images/korita-handicrafts.png"
+    },
+    {
+        "name": "Lolita’s Grocery Store",
+        "address": "3 Galeana Street, Tacuro Michoacan 59794",
+        "phone_number": "(351) 625 - 7352",
+        "web_page": "https://lolitags.com",
+        "logo": "./images/lolitas-grocery-store.png"
+    },
+    {
+        "name": "Martina’s Bakery",
+        "address": "39 November 20th Street, Carapan Michoacan 59791",
+        "phone_number": "(351) 723 – 1275",
+        "web_page": "https://martinasbakery.com",
+        "logo": "./images/martinas-bakery.png"
+    },
+    {
+        "name": "Huanto’s Clay Crafts",
+        "address": "19 Article 123rd Street, Huancito Michoacan 59792",
+        "phone_number": "(351) 632 - 2346",
+        "web_page": "https://huantosclaycrafts.com",
+        "logo": "./images/huantos-clay-crafts.png"
+    },
+    {
+        "name": "Julio’s Barber Shop",
+        "address": "3 Nicolas Bravo Street, Zopoco Michoacan 59797",
+        "phone_number": "(351) 246 – 6565",
+        "web_page": "https://juliosbarbershop.com",
+        "logo": "./images/julios-barber-shop.png"
+    },
+    {
+        "name": "Serrano’s Building Materials Store",
+        "address": "56 Morelos Street, Santo Tomas Michoacan 59795",
+        "phone_number": "(351) 234 - 6574",
+        "web_page": "https://serranosbms.com",
+        "logo": "./images/serranos-building-materials-store.png"
+    },
+    {
+        "name": "Ivan’s Computer Store",
+        "address": "10 Nacional Street, Acachuen Michoacan 59792",
+        "phone_number": "(351) 222 - 3334",
+        "web_page": "https://ivanscomputerstore.com",
+        "logo": "./images/ivans-computer-store.png"
+    },
+    {
+        "name": "Lizeth’s Clothing Store",
+        "address": "28 Matamoros Street, Tanaquillo Michoacan 59790",
+        "phone_number": "(351) 623 - 2346",
+        "web_page": "https://lizethsclothingstore.com",
+        "logo": "./images/lizeths-clothing-store.png"
+    },
+    {
+        "name": "Pepe’s Seafood",
+        "address": "39 Manantial Street, Uren Michoacan 59796",
+        "phone_number": "(351) 856 - 3425",
+        "web_page": "https://pepesseafood.com",
+        "logo": "./images/pepes-seafood.png"
+    },
+    {
+        "name": "Mary’s Shoe Store",
+        "address": "78 Madero Street, Chilchota Michoacan 59780",
+        "phone_number": "(351) 134 - 7345",
+        "web_page": "https://enriquesshoestore.com",
+        "logo": "./images/marys-shoe-store.png"
+    }
+]

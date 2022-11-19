@@ -162,4 +162,25 @@
         padding: 1rem;
         margin-bottom: 1rem;
     }
+
+    .grid{
+        max-width: 80rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .list section{
+        display: grid;
+        grid-template-columns: auto 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        text-align: start;
+    }
+
+    .list img{
+        max-width: 4rem;
+        display: block;
+        grid-column: 1/2;
+        align-self: center;
+    }
 }
