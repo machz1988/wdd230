@@ -301,6 +301,10 @@ footer div{
     margin-top: 0.5rem;
 }
 
+footer a{
+    color: var(--white-color);
+}
+
 #developerData{
     border-top: 0.05rem dashed var(--tertiary-color);
     padding-top: 00.5rem;
