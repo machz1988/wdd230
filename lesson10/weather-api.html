@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Consuming Weather API practice">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/weather-api.css">
+</head>
+<body>
+    <header>
+        <h1>Weather API</h1>
+    </header>
+    <main>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
+        <div>
+            <h2>Current Condition Icon</h2>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div id="developerData">
+            <span>&copy;<span id="year"></span> Consuming Weather API practice</span>
+            <span>Manuel Cipriano</span>
+            <span>BYU Idaho</span>
+            <span>WDD 230</span> 
+            <span>Last Modification: <span id="lastModified"></span></span>
+        </div>
+    </footer>
+    <script src="scripts/weather-api.js"></script>
+</body>
+</html>
