@@ -1,7 +1,6 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const conditionIcon = document.querySelector('#condition-icon');
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=0874fda4b0c5e7c7d087937b085abaea";
 
@@ -34,9 +33,24 @@ function displayResults(weatherData){
     }
     const str2 = arr.join(" ");
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
+    const figure = document.createElement("figure");
+    
+    const img = document.createElement("img");
+    img.setAttribute('src', iconsrc);
+    img.setAttribute('alt', desc);
+    figure.appendChild(img);
+    
+    const captionDesc = document.createElement("figcaption");    
     captionDesc.textContent = str2;
+    figure.appendChild(captionDesc);
+
+    conditionIcon.appendChild(figure);
+
+    /*<h2>Current Condition Icon</h2>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure> */
 }
 
 // derive the current date using a date object
