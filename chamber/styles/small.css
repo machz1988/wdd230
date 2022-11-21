@@ -214,11 +214,6 @@ main{
     height: 8rem;
 }
 
-#weather span{
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
 #weather h3{
     text-align: end;
     border-bottom: 0.05rem dashed var(--primary-color);

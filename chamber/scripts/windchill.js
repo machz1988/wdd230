@@ -1,5 +1,4 @@
 const icon_elem = document.querySelector(".condition-icon");
-const temp_elem = document.querySelector(".temperature");
 const wind_speed = document.querySelector(".wind-speed");
 const wind_chill = document.querySelector(".wind-chill");
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Chilchota,MX&units=metric&appid=0874fda4b0c5e7c7d087937b085abaea";
@@ -26,7 +25,6 @@ apiFetch();
 
 function displayResults(weatherData){
     temp_c = weatherData.main.temp.toFixed(0);
-    temp_elem.innerHTML = `<strong>${temp_c}</strong>`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     
@@ -46,10 +44,24 @@ function displayResults(weatherData){
     
     const captionDesc = document.createElement("figcaption");    
     captionDesc.style.textAlign = "center";
-    captionDesc.textContent = str2;
+    captionDesc.innerHTML = `<strong>${str2}</strong>`;
     figure.appendChild(captionDesc);
 
     icon_elem.appendChild(figure);
+
+    const display_temp = document.createElement("span");
+    display_temp.innerHTML = `<span><strong>${temp_c}</strong></span> &#8451;`;
+    display_temp.style.fontSize = "2rem";
+    icon_elem.appendChild(display_temp);
+    //temp_elem.innerHTML = `<strong>${temp_c}</strong>`;
+
+    //<span class="temp-unit"><span class="temperature"></span> &#8451;</span>
+    /*
+    .temp-unit{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+*/
 
     let wind_speed_ms = weatherData.wind.speed;
 
