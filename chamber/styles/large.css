@@ -163,6 +163,28 @@
         margin-bottom: 1rem;
     }
 
+    .join-main{
+        display: grid;
+        grid-template-columns: 33rem auto;
+        grid-template-rows: 1fr;
+        row-gap: 0;
+        column-gap: 0;
+        justify-content: center;
+    }
+
+    .join-benefits{
+        grid-column: 2/3;
+        border: 0.1rem solid var(--primary-color);
+        max-width: 40rem;
+    }
+
+    .join-application{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        max-width: 33rem;
+        align-items: center;
+    }
+
     .grid{
         max-width: 80rem;
         grid-template-columns: 1fr 1fr 1fr;

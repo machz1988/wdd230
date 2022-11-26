@@ -180,13 +180,30 @@ main{
     border-bottom: 0.1rem solid var(--primary-color);
     justify-content: center;
     text-align: center;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 2rem 1rem;
 }
 
 #event img{
     height: 4rem;
 }
 
+#event p{
+    margin-bottom: 1.5rem;
+}
+
+#event a{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+#event a:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+/*
 #event a{
     text-decoration: none;
     color: var(--secondary-color);
@@ -195,7 +212,7 @@ main{
 #event a:hover{
     color: var(--accent1-color);
 }
-
+*/
 #weather{
     width: auto;
     border-bottom: 0.1rem solid var(--primary-color);
@@ -211,7 +228,7 @@ main{
 }
 
 #weather img{
-    height: 8rem;
+    height: 5rem;
 }
 
 #weather h3{
@@ -257,6 +274,7 @@ main{
 #joinUs{
     display: none;
     padding: 1rem;
+    padding-top: 1.5rem;
 }
 
 #joinUs a{
@@ -297,9 +315,28 @@ footer div{
 }
 
 footer a{
-    color: var(--white-color);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
 }
 
+footer a:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+/*
+footer a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+footer a:hover{
+    color: var(--accent2-color);
+}
+*/
 #developerData{
     border-top: 0.05rem dashed var(--tertiary-color);
     padding-top: 00.5rem;
@@ -344,10 +381,24 @@ footer a{
     display: flex;
 }
 
+.join-benefits{
+    background-color: var(--tertiary-color);
+    border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.join-benefits, .join-application{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.join-benefits h2, .join-application h2{
+    text-align: center;
+}
+
 .form-join{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding-bottom: 1rem;
     gap: 0.2rem;
     color: var(--primary-color);
 }
@@ -365,8 +416,13 @@ footer a{
 }
 
 .join-h1{
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem 1rem 0 1rem;
+}
+
+#membership-level{
+    display: flex;
+    flex-direction: column;
 }
 
 #submit{

@@ -39,13 +39,14 @@ function displayResults(weatherData){
     
     const img = document.createElement("img");
     img.setAttribute('src', iconsrc);
-    img.setAttribute('alt', desc);
+    img.setAttribute('alt', `${desc} icon`);
     figure.appendChild(img);
     
     const captionDesc = document.createElement("figcaption");    
     captionDesc.style.textAlign = "center";
     captionDesc.innerHTML = `<strong>${str2}</strong>`;
     figure.appendChild(captionDesc);
+    figure.style.textAlign = "center";
 
     icon_elem.appendChild(figure);
 
@@ -68,7 +69,7 @@ function displayResults(weatherData){
     let temp_f = (temp_c * 9 / 5) + 32;
 
     wind_speed_kmh = wind_speed_ms * 3600 / 1000;
-    wind_speed.textContent = wind_speed_kmh;
+    wind_speed.textContent = wind_speed_kmh.toFixed(2);
     let wind_speed_mph = wind_speed_kmh * 1.609;
 
     //console.log(`${temp_f} ${wind_speed_mph}`);

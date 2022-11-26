@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Join</title>
+    <title>Join us!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Join form">
     <link rel="shortcut icon" href="favicon.ico">
@@ -21,8 +21,8 @@
             <h1>Eraxamani Chamber</h1>
         </div>
         <div id="socialMedia">
-            <img src="images/facebook-logo.png" alt="facebook logo">
-            <img src="images/linkedin-logo.png" alt="linkedin logo">
+            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="images/linkedin-logo.png" alt="linkedin logo"></a>
         </div>
         <button id="hamButton"><span>&#9776;</span><span>X</span></button>
         <nav>
@@ -31,7 +31,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li class="active"><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>    
-                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="date">
@@ -39,33 +39,90 @@
         </div>
     </header>
     <main class="join-main">
-        <h1 class="join-h1">Join us!</h1>
-        <form class="form-join" method="get" action="thankyou.html">
-            <label for="first-name">First name:</label>
-            <input id="first-name" name="first-name" type="text" autofocus required>
-            <label for="last-name">Last name:</label>
-            <input id="last-name" name="last-name" type="text" required>
-            <label for="title">Title:</label>
-            <input id="title" name="title" type="text" pattern="[a-zA-Z\- ]{7,}">
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email" placeholder="myemail@example.com" required>
-            <label for="cell-phone">Cell phone number:</label>
-            <input id="cell-phone" name="cell-phone" type="tel" required>
-            <label for="business-name">Business name:</label>
-            <input id="business-name" name="business-name" type="text" required>
-            <label for="level">Membership level:</label>
-            <input id="level" name="level" type="text" list="membership-levels" required>
-            <datalist id="membership-levels">
-                <option value="NP Membership">
-                <option value="Bronze Membership">
-                <option value="Silver Membership">
-                <option value="Gold Membership">
-            </datalist>
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" rows="5"></textarea> 
-            <input id="sent-date" name="sent-date" type="hidden">
-            <input id="submit" name="submit" type="submit">
-        </form>
+        <section class="join-benefits">
+            <h2>Membership Level Benefits</h2>
+            <div>
+                <h3>NP Membership</h3>
+                <p>Free</p>
+                <ul>
+                    <li>Use of our chapter resources.</li>
+                    <li>Invitation to our anual event for all partners.</li>
+                    <li>Opportunities to participate in Trade Missions.</li>
+                    <li>Listing in Directory.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Bronze Membership</h3>
+                <p>$100</p>
+                <ul>
+                    <li>Privileges as private industry members of Chapter.</li>
+                    <li>Member discounts for some events.</li>
+                    <li>Research assistance for limited amount of service, with discount for additional service.</li>
+                    <li>Listing on Website and in Directory</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <p>$500</p>
+                <ul>
+                    <li>Member discounts for all events.</li>
+                    <li>Regional networking.</li>
+                    <li>Special consideration for Trade Mission participation.</li>
+                    <li>All other Bronze Membership benefits.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <p>$1000</p>
+                <ul>
+                    <li>Signature corporate recognition on the Eraxamani Chamber Website.</li>
+                    <li>Exclusive participation in fall and spring Board Meetings.</li>
+                    <li>Priority consideration for Trade Missions.</li>
+                    <li>Priority access to Eraxamani Chamber staff assistance for research.</li>
+                    <li>All other Silver Membership benefits.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="join-application">
+            <h2>Application form</h2>
+            <form class="form-join" method="get" action="thankyou.html">
+                <label for="first-name">First name:</label>
+                <input id="first-name" name="first-name" type="text" required>
+                <label for="last-name">Last name:</label>
+                <input id="last-name" name="last-name" type="text" required>
+                <label for="title">Title:</label>
+                <input id="title" name="title" type="text" pattern="[a-zA-Z\- ]{7,}">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="myemail@example.com" required>
+                <label for="cell-phone">Cell phone number:</label>
+                <input id="cell-phone" name="cell-phone" type="tel" required>
+                <label for="business-name">Business name:</label>
+                <input id="business-name" name="business-name" type="text" required>
+                <label for="membership-level">Membership level:</label>
+                <div id="membership-level">
+                    <div>
+                        <input id="np-membership" name="level" type="radio" value="np-membership" checked>
+                        <label for="np-membership">NP Membership</label>
+                    </div>
+                    <div>
+                        <input id="bronze-membership" name="level" type="radio" value="bronze-membership">
+                        <label for="bronze-membership">Bronze Membership</label>
+                    </div>
+                    <div>
+                        <input id="silver-membership" name="level" type="radio" value="silver-membership">
+                        <label for="silver-membership">Silver Membership</label>
+                    </div>
+                    <div>
+                        <input id="gold-membership" name="level" type="radio" value="gold-membership">
+                        <label for="gold-membership">Gold Membership</label>
+                    </div>
+                </div>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5"></textarea> 
+                <input id="sent-date" name="sent-date" type="hidden">
+                <input id="submit" name="submit" type="submit">
+            </form>
+        </section>
     </main>
     <footer>
         <picture><img src="images/logo.webp" alt="Eraxamani Chamber logo" ></picture>
@@ -80,7 +137,7 @@
             <span>Location Map</span>
         </div>
         <div id="developerData">
-            <span>&copy;<span id="year"></span>Eraxamani Chamber</span>
+            <span>&copy;<span id="year"></span> Eraxamani Chamber</span>
             <span>Manuel Cipriano</span>
             <span>WDD 230 Project</span>
             <span>Last Modification: <span id="lastModified"></span></span>

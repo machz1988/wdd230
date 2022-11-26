@@ -1,15 +1,4 @@
 @media (min-width: 32rem) {
-    /*
-    :root{
-        --primary-color: #1C1F33;
-        --secondary-color: #D72638;
-        --tertiary-color: #C2D3CD;
-        --accent1-color: #DDD78D;
-        --accent2-color: #FF8906;
-        --text-color: #fff;
-        --white-color: #fff;
-    }
-    */
     
     main{
         display: grid;
@@ -94,13 +83,16 @@
         text-align: center;
     }
 
+    .join-application{
+        margin: 0 auto;
+    }
+
     .form-join{
         display: grid;
         grid-template-columns: auto 20rem;
         align-items: center;   
         column-gap: 1rem;
         row-gap: 1rem;
-        margin: 0 auto;
     }
 
     .form-join label{
