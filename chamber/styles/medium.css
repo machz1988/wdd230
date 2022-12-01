@@ -78,11 +78,11 @@
     .discoverImage img:hover {
         box-shadow: 0 0 2rem var(--primary-color);
     }
-
+/*
     .join-h1{
         text-align: center;
     }
-
+*/
     .join-application{
         margin: 0 auto;
     }
@@ -107,6 +107,25 @@
     #submit{
         grid-column: 2/3;
         margin: 0;
+    }
+
+    .thankyou-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thankyou-main p{
+        max-width: 20rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .thankyou-main img{
+        max-width: 30rem;
+        margin: 0 auto;
+        padding-bottom: 1rem;
     }
 
     .contact-main{

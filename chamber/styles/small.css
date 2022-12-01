@@ -415,9 +415,19 @@ footer a:hover{
     padding-top: 1rem;
 }
 
-.join-h1{
-    margin: 0 auto;
+.thankyou-main h1{
+    text-align: center;
+    margin: 0;
     padding: 1rem 1rem 0 1rem;
+}
+
+.thankyou-main p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.thankyou-main img{
+    width: 100%;
 }
 
 #membership-level{
