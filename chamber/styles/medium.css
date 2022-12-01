@@ -159,8 +159,13 @@
 }
 
 @media (min-width: 40rem) {
+
     #grid, #list{
         margin-bottom: 0;
+    }
+
+    .list a{
+        padding-bottom: 0;
     }
 
     .grid{

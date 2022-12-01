@@ -23,7 +23,8 @@ function displayBusiness(business){
     h3.textContent = `${business.name}`;
     p_1.textContent = `${business.address}`;
     p_2.textContent = `${business.phone_number}`;
-    a.textContent = `${business.web_page}`;
+    a.textContent = "Website";
+    a.href = `${business.web_page}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${business.logo}`);

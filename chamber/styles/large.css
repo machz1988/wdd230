@@ -216,9 +216,18 @@
         margin: 0 auto;
     }
 
+    .list{
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    .list a{
+        padding-bottom: 0.5rem;
+    }
+
     .list section{
         display: grid;
-        grid-template-columns: auto 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto 1fr 1fr auto auto;
         grid-template-rows: 1fr;
         align-items: center;
         text-align: start;

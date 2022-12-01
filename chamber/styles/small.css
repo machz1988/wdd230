@@ -478,6 +478,21 @@ footer a:hover{
     padding: 0.5rem;
 }
 
+.directoryMain a{
+    max-width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+.directoryMain a:hover{
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
 .menu{
     text-align: center;
     margin-top: 1rem;
@@ -509,6 +524,7 @@ footer a:hover{
 
 .grid section{
     padding: 1rem;
+    padding-bottom: 1.5rem;
     border-top: 0.1rem solid var(--primary-color);
 }
 
