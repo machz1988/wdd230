@@ -29,17 +29,20 @@
     --card-width: 100%;
   }
 
-#headerContent{
+header{
+    margin-top: 1em;
+}
+
+#header-content{
     display: grid;
     grid-template-rows: 200px 1fr;
     max-width: var(--card-width);
     background-color: var(--primary-color);
-    /*margin-top: 1em;*/
     padding: 1em;
     gap: 1em;
 }
 
-#headerContent img{
+#header-content img{
     height: 100%;
     /*align-self: center;
     justify-self: center;*/
@@ -47,7 +50,7 @@
     border-radius: 100px;
 }
 
-#headerContent h1{
+#header-content h1{
     width: 100%;
     align-self: center;
     /*justify-self: center;*/
@@ -56,7 +59,7 @@
     color: var(--headline-color-on-color);
 }
 
-#mainContent{
+#main-content{
     max-width: var(--card-width);
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -67,19 +70,19 @@
     box-shadow: 5px 5px 6px var(--primary-color);*/
 }
 
-#mainContent h2{
+#main-content h2{
     font-family: var(--heading-font);
 }
 
-#mainContent ul{
+#main-content ul{
     font-family: var(--paragraph-font);
 }
 
-#mainContent p{
+#main-content p{
     font-family: var(--paragraph-font);
 }
 
-#footerContent{
+#footer-content{
     font-family: var(--paragraph-font);
     max-width: var(--card-width);
     background-color: var(--primary-color);
@@ -91,4 +94,3 @@
     margin-top: 10px;
     box-shadow: 5px 5px 6px var(--primary-color);*/
 }
-
