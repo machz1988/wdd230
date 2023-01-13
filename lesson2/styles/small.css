@@ -29,19 +29,19 @@ p{
     font-family: var(--paragraph-font);
 }
 
-#headerContent{
+#header-content{
     display: block;
     background-color: var(--primary-color);
     margin: 1em 1em 0 1em;
     padding: 0.2em;
 } 
 
-#headerContent h1, #headerContent h2{
+#header-content h1, #header-content h2{
     color: var(--headline-color-on-color);
     text-align: center;
 }
 
-#mainContent{
+#main-content{
     display: grid;
     grid-template-rows: auto auto auto;
     padding: 1em;
@@ -141,14 +141,14 @@ p{
     color: var(--paragraph-color-on-white);
 }
 
-#footerContent{
+#footer-content{
     display: block;
     background-color: var(--primary-color);
     margin: 0 1em 0 1em;
     padding: 0.2em;
 } 
 
-#footerContent p{
+#footer-content p{
     color: var(--headline-color-on-color);
     text-align: center;
 }
