@@ -1,9 +1,9 @@
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #362222;
-    --secondary-color: #B3541E;
-    --accent1-color: #FFCCD2;
-    --accent2-color: #FFEDED;
+    --primary-color: #264653;
+    --secondary-color: #2A9D8F;
+    --accent1-color: #E9C46A;
+    --accent2-color: #fff;
   
     /* change the values below to your chosen font(s) */
     --heading-font: 'Noto Serif', serif;
@@ -19,9 +19,13 @@
 
 
 
-h1, h2 {
+h1, h2, h3 {
     width: 100%;
     font-family: var(--heading-font);
+}
+
+h3{
+    color: var(--primary-color);
 }
 
 p{
@@ -64,14 +68,16 @@ p{
 }
 
 .card1 h2{
-    color: white;
+    color: var(--accent2-color);
     background-color: var(--secondary-color);
-    margin: 0;
     margin-block: 0;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card1 img{
+    padding-top: 1rem;
     width: 100%;
 }
 
@@ -95,14 +101,16 @@ p{
 }
 
 .card2 h2{
-    color: white;
+    color: var(--accent2-color);
     background-color: var(--secondary-color);
-    margin: 0;
     margin-block: 0;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card2 img{
+    padding-top: 1rem;
     width: 100%;
 }
 
@@ -126,14 +134,16 @@ p{
 }
 
 .card3 h2{
-    color: white;
+    color: var(--accent2-color);
     background-color: var(--secondary-color);
-    margin: 0;
     margin-block: 0;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card3 img{
+    padding-top: 1rem;
     width: 100%;
 }
 
