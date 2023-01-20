@@ -1,10 +1,13 @@
 @charset "UTF-8"; /* not necessary */
 /* bluegrey matter   #637f80 light  #536872  #708090  #536878  #36454f dark */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+:root{
+	--primary-color: #353535;
+	--secondary-color: #3C6E71;
+	--accent1-color: #fff;
+	--accent2-color: #D9D9D9;
 }
+
+
 body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
@@ -12,7 +15,7 @@ body {
 
 header,
 footer {
-	background-color: #708080;
+	background-color: var(--primary-color);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -30,10 +33,11 @@ footer {
 
 h1 {
 	font-size: 2rem;
+	color: var(--accent2-color);
 }
 h2, h3 {
 	padding: .5rem;
-	color: #536878;
+	color: var(--primary-color);
 }
 
 p {
@@ -41,9 +45,9 @@ p {
 }
 
 nav {
-	background-color: #36454f;
+	background-color: var(--secondary-color);
 	text-align: center;
-	box-shadow: 0 0 30px #333;
+	box-shadow: 0 0 30px var(--primary-color);
 }
 
 nav {
@@ -57,7 +61,7 @@ nav div {
 
 nav a {
 	display: block;
-	color: #fff;
+	color: var(--accent2-color);
 	text-align: center;
 	padding: 15px;
 	text-decoration: none;
@@ -65,8 +69,8 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #708080;
-	color: yellow;
+	background-color: var(--accent2-color);
+	color: var(--primary-color);
 }
 
 main {
@@ -96,6 +100,7 @@ footer {
 	padding: 1rem;
 	justify-content: space-between;
 	font-weight: 700;
+	color: var(--accent2-color);
 }
 
 .colors {

@@ -1,11 +1,19 @@
 :root{
+    /*
     --primary-color: #1C1F33;
     --secondary-color: #D72638;
     --tertiary-color: #C2D3CD;
     --accent1-color: #DDD78D;
     --accent2-color: #FF8906;
+    */
+    --primary-color: #0A0908;
+    --secondary-color: #5E503F;
+    --tertiary-color: #22333B;
+    --accent1-color: #EAE0D5;
+    --accent2-color: #C6AC8F;
     --text-color: #fff;
     --white-color: #fff;
+
 }
 
 body{
