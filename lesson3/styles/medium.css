@@ -4,14 +4,45 @@
 	}
 	
 	nav a {
-		font-size: 1.1rem;
+		flex: 1 1 auto;
+		align-items: center;
 	}
 
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		/*align-items: center;
+		justify-content: center;*/
 	}
-    
-	main picture {
-		display: block;
+
+	fieldset{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	fieldset:nth-child(1){
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	fieldset:nth-child(2){
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	fieldset:nth-child(3){
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	fieldset p{
+		text-align: center;
+	}
+
+	.main-audience{
+		display: flex;
+		flex-direction: column;
 	}
 }

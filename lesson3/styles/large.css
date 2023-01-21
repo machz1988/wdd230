@@ -7,4 +7,76 @@
 	nav a {
 		font-size: 1.3rem;
 	}
+
+	header,
+	nav,
+	main,
+	footer {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	fieldset:nth-child(2){
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+
+	fieldset:nth-child(3){
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	fieldset:nth-child(4){
+		grid-column: 3/4;
+		grid-row: 1/3;
+	}
+
+	footer{
+		margin-top: 1rem;
+	}
+
+	.main-audience{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	
+    .main-audience fieldset:nth-child(1){
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.main-audience fieldset:nth-child(4){
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	.main-audience fieldset:nth-child(2){
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+
+	.main-audience fieldset:nth-child(3){
+		grid-column: 3/4;
+		grid-row: 1/3;
+	}
+
+	fieldset ul{
+		padding: 0.5rem;
+	}
+
+	.image-elem{
+		margin-left: 0;
+	}
+
+	.image-elem img{
+		width: 100%;
+		height: auto;
+	}
 }

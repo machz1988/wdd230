@@ -5,8 +5,8 @@
 	--secondary-color: #3C6E71;
 	--accent1-color: #fff;
 	--accent2-color: #D9D9D9;
+	--tertiary-color: #9D69A3;
 }
-
 
 body {
 	font-size: 16px;
@@ -20,23 +20,16 @@ footer {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
-}
-
-header,
-nav,
-main,
-footer {
-	max-width: 960px;
-	margin: 0 auto;
+	padding: 1rem;
 }
 
 h1 {
-	font-size: 2rem;
+	/*font-size: 2rem;*/
 	color: var(--accent2-color);
 }
+
 h2, h3 {
-	padding: .5rem;
+	/*padding: .5rem;*/
 	color: var(--primary-color);
 }
 
@@ -45,27 +38,20 @@ p {
 }
 
 nav {
+	display: flex;
+	flex-direction: column;
 	background-color: var(--secondary-color);
 	text-align: center;
 	box-shadow: 0 0 30px var(--primary-color);
-}
-
-nav {
-	display: flex;
-	flex-direction: column;
-}
-
-nav div {
-	flex: 1 1 auto;
 }
 
 nav a {
 	display: block;
 	color: var(--accent2-color);
 	text-align: center;
-	padding: 15px;
+	padding: 1rem;
 	text-decoration: none;
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 nav a:hover {
@@ -73,14 +59,50 @@ nav a:hover {
 	color: var(--primary-color);
 }
 
-main {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	justify-content: center;
-	font-size: 0.85rem;
+.active{
+	background-color: var(--tertiary-color);
+	color: var(--accent1-color);
 }
 
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+fieldset{
+	margin-left: 1rem;
+	margin-right: 1rem;	
+}
+
+footer {
+	margin-top: 1rem;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	font-weight: 700;
+	color: var(--accent2-color);
+}
+
+fieldset ul{
+	padding-left: 0;
+}
+
+fieldset ul li{
+	padding-bottom: 0.5rem;
+	margin-left: 1rem;
+}
+
+.image-elem{
+	list-style: none;
+}
+
+.image-elem img{
+	border-radius: 5rem;
+	box-shadow: 0.5rem 0.5rem 0.5rem var(--primary-color);
+}
+
+
+/*
 main picture {
 	display: none;
 	margin: 1rem;
@@ -94,14 +116,7 @@ main article ul {
     list-style: none;
     text-align: center;
 }
-
-footer {
-	display: flex;
-	padding: 1rem;
-	justify-content: space-between;
-	font-weight: 700;
-	color: var(--accent2-color);
-}
+*/
 
 .colors {
 	width: 100%;
