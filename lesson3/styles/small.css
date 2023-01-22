@@ -101,6 +101,57 @@ fieldset ul li{
 	box-shadow: 0.5rem 0.5rem 0.5rem var(--primary-color);
 }
 
+main article {
+	margin: 1rem;
+}
+
+.main-scheme{
+	display: flex;
+}
+
+.colors{
+	display: flex;
+	flex-direction: column;
+}
+
+fieldset div{
+	padding: 1rem;
+}
+
+fieldset:nth-child(1) div{
+	background-color: #0A0908;
+	color: #fff;
+}
+
+fieldset:nth-child(2) div{
+	background-color: #5E503F;
+	color: #fff;
+}
+
+fieldset:nth-child(3) div{
+	background-color: #22333B;
+	color: #fff;
+}
+
+fieldset:nth-child(4) div{
+	background-color: #EAE0D5;
+	color: #000;
+}
+
+fieldset:nth-child(5) div{
+	background-color: #C6AC8F;
+	color: #000;
+}
+
+fieldset:nth-child(6) div{
+	background-color: #fff;
+	color: #0A0908;
+}
+
+fieldset:nth-child(7) div{
+	background-color: #000;
+	color: #fff;
+}
 
 /*
 main picture {
@@ -108,15 +159,13 @@ main picture {
 	margin: 1rem;
 }
 
-main article {
-	margin: 1rem;
-}
+
 
 main article ul {
     list-style: none;
     text-align: center;
 }
-*/
+
 
 .colors {
 	width: 100%;
@@ -154,6 +203,8 @@ main article ul {
 .text_color{
 	background-color: #FFFFFF;
 }
+
+*/
 
 .heading_font{
 	font-family: 'Quicksand', sans-serif;
