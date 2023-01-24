@@ -1,5 +1,5 @@
 @charset "UTF-8"; /* not necessary */
-/* bluegrey matter   #637f80 light  #536872  #708090  #536878  #36454f dark */
+
 :root{
 	--primary-color: #353535;
 	--secondary-color: #3C6E71;
@@ -24,12 +24,10 @@ footer {
 }
 
 h1 {
-	/*font-size: 2rem;*/
 	color: var(--accent2-color);
 }
 
 h2, h3 {
-	/*padding: .5rem;*/
 	color: var(--primary-color);
 }
 
@@ -97,8 +95,7 @@ fieldset ul li{
 }
 
 .image-elem img{
-	border-radius: 5rem;
-	box-shadow: 0.5rem 0.5rem 0.5rem var(--primary-color);
+	border: 0.2rem solid var(--tertiary-color);
 }
 
 main article {
@@ -152,59 +149,6 @@ fieldset:nth-child(7) div{
 	background-color: #000;
 	color: #fff;
 }
-
-/*
-main picture {
-	display: none;
-	margin: 1rem;
-}
-
-
-
-main article ul {
-    list-style: none;
-    text-align: center;
-}
-
-
-.colors {
-	width: 100%;
-	min-width: 350px;
-	margin-top: 1rem;
-	text-align: center;
-}
-.colors th {
-	background-color: #999;
-	padding: 0.5rem;
-}
-.colors td{
-	width: 20%;
-	height: 3em;
-	padding: 0.5rem;
-}
-
-.primary {
-	background-color: #1C1F33;
-	color: #fff;
-}
-.secondary {
-	background-color: #D72638;
-	color: #fff;
-}
-.accent1 {
-	background-color: #FF8906;
-	color: #fff;
-}
-.accent2{
-	background-color: #689689;
-	color: #fff;
-}
-
-.text_color{
-	background-color: #FFFFFF;
-}
-
-*/
 
 .heading_font{
 	font-family: 'Quicksand', sans-serif;
