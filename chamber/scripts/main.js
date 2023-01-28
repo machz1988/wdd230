@@ -9,25 +9,25 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
 function toggleMenu(){
-    document.getElementById("mainNav").classList.toggle("open");
-    document.getElementById("hamButton").classList.toggle("open");
+    document.getElementById("main-nav").classList.toggle("open");
+    document.getElementById("ham-button").classList.toggle("open");
     //let ul = document.querySelector("ul");
     //let header = document.querySelector("header");
     //header.appendChild(ul);
 }
 
-const x = document.getElementById("hamButton");
+const x = document.getElementById("ham-button");
 x.onclick = toggleMenu;
 
 //document.getElementById("currentDate").innerHTML = date;
 let date = document.lastModified;
-document.getElementById("lastModified").textContent = date;
+document.getElementById("last-modified").textContent = date;
 //document.getElementById("currentYear").innerHTML = 
 const currentYear = document.querySelector("#year")
 currentYear.textContent = now.getFullYear();
 
 // initialize display elements
-const lastVisitDisplay = document.querySelector(".lastVisit");
+const lastVisitDisplay = document.querySelector(".last-visit");
 
 // get the stored value in localStorage
 //let lastVisit = Number(window.localStorage.getItem("last-visit"));
