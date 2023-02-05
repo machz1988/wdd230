@@ -102,8 +102,9 @@ main article {
 	margin: 1rem;
 }
 
-.main-scheme{
+.main-scheme, .main-typography{
 	display: flex;
+	flex-direction: column;
 }
 
 .colors{
@@ -150,15 +151,17 @@ fieldset:nth-child(7) div{
 	color: #fff;
 }
 
-.heading_font{
+.heading-font{
+	font-size: 32px;
+	color: #000;
 	font-family: 'Quicksand', sans-serif;
 }
 
-.paragraph_font{
+.paragraph-font{
 	font-family: 'Lato', sans-serif;
 }
 
-.colored_paragraph{
+.colored-paragraph{
 	background-color: #1C1F33;
 	color: #FFFFFF;
 	font-family: 'Lato', sans-serif;

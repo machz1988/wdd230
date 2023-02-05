@@ -54,13 +54,21 @@
 		display: block;
 	}
 
-	
+	.main-design{
+		display: flex;
+		flex-direction: column;
+	}
+
 	.main-typography{
 		display: flex;
 	}
 
 	.div-typography{
 		display: grid;
+	}
+
+	.div-typography fieldset{
+		flex-direction: column;
 	}
 
 	.div-typography h2{
