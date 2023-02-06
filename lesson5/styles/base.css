@@ -42,25 +42,25 @@ main{
     border-left: 0.2rem dashed var(--primary-color);
 }
 
-#addChapter{
+#add-chapter{
     display: flex;
     justify-content: space-around;
 }
 
-#addChapter input{
+#add-chapter input{
     color: var(--primary-color);
     border-color: var(--primary-color);
     border-radius: 0.5rem;
 }
 
-#addButton{
+#add-button{
     color: var(--primary-color);
     border-color: var(--primary-color);
     border-radius: 0.5rem;
     background-color: var(--accent2-color);
 }
 
-#favChapters{
+#fav-chapters{
     list-style: none;
     margin: 0;
     padding: 1rem;

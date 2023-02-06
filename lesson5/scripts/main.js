@@ -1,7 +1,7 @@
 function addChapter(){
     const entry = document.querySelector("#entry");
     if (entry.value != ""){
-        const fav_chapters = document.querySelector("#favChapters");
+        const fav_chapters = document.querySelector("#fav-chapters");
         const li = document.createElement('li');
         li.style.display = 'flex';
         li.style.justifyContent = 'space-between';
@@ -25,5 +25,5 @@ function addChapter(){
     }
 }
 
-const addButton = document.querySelector('#addButton');
+const addButton = document.querySelector('#add-button');
 addButton.onclick = addChapter;
