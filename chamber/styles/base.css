@@ -118,6 +118,7 @@ header nav{
 
 #main-nav li.active a{
     background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 #main-nav li a:hover{
