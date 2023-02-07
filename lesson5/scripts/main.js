@@ -19,6 +19,10 @@ function addChapter(){
         li.appendChild(button);
         fav_chapters.appendChild(li);
 
+        // erasing content 
+        entry.value = "";
+        entry.focus();
+
         button.addEventListener('click', ()=>{
             fav_chapters.removeChild(li);
         })
