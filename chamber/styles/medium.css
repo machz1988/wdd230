@@ -21,6 +21,18 @@
         grid-row: 3/4;
         grid-column: 1/3;
         border: none;
+        border-bottom: 0.1rem solid var(--primary-color);
+        flex-direction: row;
+    }
+
+    .spotlight:nth-child(1){
+        width: 50%;
+        border: none;
+        border-right: 0.05rem dashed var(--primary-color);
+    }
+    
+    .spotlight:nth-child(2){
+        width: 50%;
     }
 
     #event{
