@@ -1,4 +1,4 @@
-@media (min-width: 60rem){    
+@media (min-width: 62rem){    
     #social-media{
         grid-column-start: 3;
         justify-content: end;
@@ -13,14 +13,16 @@
         grid-row-end: 2;       
         grid-column-start: 2;
         grid-column-end: 4;
-        display: flex;
-        justify-content: space-between;
-        padding: 00.5rem;
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        align-self: center;
+        justify-self: end;
     }
 
     #main-nav{
         display: flex;
     }
+
 
     #main-nav li a{
         border: none;
