@@ -37,7 +37,7 @@ const currentYear = document.querySelector("#year")
 currentYear.textContent = now.getFullYear();
 
 // initialize display elements
-const lastVisitDisplay = document.querySelector(".last-visit");
+const lastVisitDisplay = document.querySelector("#last-visit");
 
 // get the stored value in localStorage
 //let lastVisit = Number(window.localStorage.getItem("last-visit"));
