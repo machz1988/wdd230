@@ -1,4 +1,5 @@
-@media (min-width: 62rem){    
+@media (min-width: 65rem){    
+
     #social-media{
         grid-column-start: 3;
         justify-content: end;

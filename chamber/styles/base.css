@@ -42,9 +42,9 @@ header{
 }
 
 #name-enterprise img{
-    height: 2rem;
+    height: 4rem;
     margin-right: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 #name-enterprise h1{

@@ -1,4 +1,7 @@
 @media (min-width: 32rem) {
+    #name-enterprise img{
+        margin-right: 1rem;
+    }
     
     main{
         display: grid;
