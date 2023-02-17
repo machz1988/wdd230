@@ -36,7 +36,7 @@ img[data-src] {
   
 img {
     filter: blur(0em);
-    transition: filter 2s;
+    transition: filter 3s;
 }
 
 footer{
@@ -53,7 +53,7 @@ footer div{
     margin-top: 0.5rem;
 }
 
-#developerData{
+#developer-data{
     padding-top: 00.5rem;
     padding-bottom: 00.5rem;
 }
