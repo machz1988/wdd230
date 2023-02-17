@@ -327,35 +327,40 @@ footer a:hover{
     padding-bottom: 00.5rem;
 }
 
-.discoverMain{
+.discover-main{
     display: flex;
     flex-direction: column;
 }
 
-.discoverImage img[data-src] {
+.discover-image img[data-src] {
     filter: blur(0.2rem);
 }
   
-.discoverImage img {
+.discover-image img {
     filter: blur(0rem);
     transition: filter 2s;
     width: 100%;
 }
 
-.discoverSection{
+.discover-section{
     border-bottom: 0.1rem solid var(--primary-color);
     padding: 1rem;
 }
 
-.discoverSection:nth-child( odd ) {
+.discover-section:nth-child( odd ) {
     background-color: var(--tertiary-color);
+    color: var(--text-on-color);
 }
 
-.discoverSection h2, h3{
+.discover-section h2, h3{
     margin: 0;
 }
 
-.discoverArticle{
+.hidden-image{
+    display: none;
+}
+
+.discover-article{
     border-bottom: 0.1rem solid var(--primary-color);
     text-align: center;
     padding-bottom: 1rem;

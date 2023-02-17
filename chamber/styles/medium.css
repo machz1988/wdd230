@@ -61,19 +61,31 @@
         grid-column-end: 4;
     }
 
-    .discoverSection{
+    .demographics{
+        max-width: 50rem;
+        margin: auto;
+    }
+
+    .discover-section{
         border: none;
     }
 
-    .discoverSection:nth-child(odd){
+    .discover-section:nth-child(odd){
         background-color: var(--white-color);
+        color: var(--primary-color);
     }
 
-    .discoverArticle:nth-child(1){
-        border-top: 0.1rem solid var(--primary-color);
+    .discover-article{
+        border: none;
     }
 
-    .discoverImage img:hover {
+    .discover-image img{
+        margin: 1rem 0;
+        width: 80%;
+        max-width: 35rem;
+    }
+
+    .discover-image img:hover {
         box-shadow: 0 0 2rem var(--primary-color);
     }
 /*
