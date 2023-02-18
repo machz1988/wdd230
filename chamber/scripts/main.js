@@ -3,7 +3,7 @@ const datefield = document.querySelector("#date");
 
 // derive the current date using a date object
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 const day = now.getDay();
 
 if ( day == 1 || day == 2){
@@ -16,7 +16,7 @@ if ( day == 1 || day == 2){
 }
 
 // long, medium, short options ... try them
-datefield.innerHTML = `<em>${fulldate}</em>`;
+datefield.innerHTML = `<em>${fullDate}</em>`;
 
 function toggleMenu(){
     document.getElementById("main-nav").classList.toggle("open");
