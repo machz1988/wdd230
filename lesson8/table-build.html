@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Table Build</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HTML Table Build Example">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/tablecss.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Table Build</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">ACME Wildwest Services</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="highlight"></th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Feature 1</strong></td>
+                    <td>&#10004;</td>
+                    <td>&#10004;</td>
+                    <td>&#10004;</td>
+                </tr>
+                <tr>
+                    <td><strong>Feature 2</strong></td>
+                    <td>&#10006;</td>
+                    <td>&#10004;</td>
+                    <td>&#10004;</td>
+                </tr>
+                <tr>
+                    <td><strong>Feature 3</strong></td>
+                    <td>&#10006;</td>
+                    <td>&#10006;</td>
+                    <td>&#10004;</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="developerData">
+            <span>&copy;<span id="year"></span> HTML Table Build</span>
+            <span>Manuel Cipriano</span>
+            <span>WDD 230 Project</span>
+            <span>Last Modification: <span id="lastModified"></span></span>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -53,15 +53,13 @@ footer{
 table {
 	width: 100%;
 	border: thin solid var(--border);
-	box-shadow: 0 0 7px var(--shadow);
 	border-collapse: collapse;
 }
 
 caption {
-  padding: 10px;
-  caption-side: bottom;
-	color: var(--back);
-	font-size: .85rem;
+    padding: 0.5rem;
+    caption-side: bottom;
+	font-size: 1rem;
 }
 
 tr:first-child th, .highlight {
@@ -69,9 +67,13 @@ tr:first-child th, .highlight {
 	color: var(--forelight);
 }
 
+thead th, thead td {
+	padding: 1rem 1rem;
+}
+
 th, td {
-	padding: 7px 15px;
-	border: 1px solid var(--borderlight);
+	padding: 0.5rem 0.5rem;
+	border: 0.05rem solid var(--borderlight);
 }
 
 th {
