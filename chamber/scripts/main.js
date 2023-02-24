@@ -41,9 +41,10 @@ const lastVisitDisplay = document.querySelector("#last-visit");
 
 // get the stored value in localStorage
 //let lastVisit = Number(window.localStorage.getItem("last-visit"));
-let dateLastVisit = Number(window.localStorage.getItem("date-last-visit"))
+let dateLastVisit = Number(window.localStorage.getItem("date-last-visit"));
 
 const today = Date.now();
+//console.log(`${dateLastVisit} ${today}`);
 // determine if this is the first visit or display the number of visits.
 if (dateLastVisit <= today) {
     const diffTime = today - dateLastVisit;
@@ -54,7 +55,7 @@ if (dateLastVisit <= today) {
 	lastVisitDisplay.textContent = `This is your first visit!`;
 }
 
-// increment the number of visits.
+// update the date of last visit
 dateLastVisit = today;
 // store the new number of visits value
 window.localStorage.setItem("date-last-visit", dateLastVisit);
