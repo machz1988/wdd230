@@ -88,11 +88,12 @@
     .discover-image img:hover {
         box-shadow: 0 0 2rem var(--primary-color);
     }
-/*
-    .join-h1{
-        text-align: center;
+
+    .join-benefits{
+        max-width: 40rem;
+        margin: 0 auto;
     }
-*/
+
     .join-application{
         margin: 0 auto;
     }

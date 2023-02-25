@@ -153,6 +153,11 @@
         width: 100%;
     }
 
+    .discover-section:nth-child( even ) {
+        background-color: var(--tertiary-color);
+        color: var(--text-on-color);
+    }
+
     .discover-images{
         grid-column: 2/3;
         display: flex;
@@ -207,6 +212,8 @@
         grid-column: 2/3;
         border: 0.1rem solid var(--primary-color);
         max-width: 40rem;
+        background-color: var(--tertiary-color);
+        color: var(--text-on-color);
     }
 
     .join-application{

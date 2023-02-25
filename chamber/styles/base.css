@@ -8,8 +8,10 @@
     */
     --primary-color: #0A0908;
     --secondary-color: #5E503F;
+    /*--tertiary-color: #22333B;*/
     --tertiary-color: #22333B;
     --accent1-color: #EAE0D5;
+    /*--accent1-color: #EAE0D5;*/
     --accent2-color: #C6AC8F;
     --text-color: #0A0908;
     --text-on-color: #EAE0D5;
@@ -343,13 +345,8 @@ footer a:hover{
 }
 
 .discover-section{
-    border-bottom: 0.1rem solid var(--primary-color);
+    /*border-bottom: 0.1rem solid var(--primary-color);*/
     padding: 1rem;
-}
-
-.discover-section:nth-child( odd ) {
-    background-color: var(--tertiary-color);
-    color: var(--text-on-color);
 }
 
 .discover-section h2, h3{
@@ -371,7 +368,6 @@ footer a:hover{
 }
 
 .join-benefits{
-    background-color: var(--tertiary-color);
     border-bottom: 0.1rem solid var(--primary-color);
 }
 
@@ -427,7 +423,7 @@ footer a:hover{
 
 #submit{
     background-color: var(--secondary-color);
-    color: var(--text-color);
+    color: var(--text-on-color);
     border-color: var(--accent2-color);
     margin-top: 1rem;
 }
