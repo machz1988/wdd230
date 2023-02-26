@@ -388,6 +388,10 @@ footer a:hover{
     color: var(--text-color);
 }
 
+.form-join input:required{
+    border-left: 0.2rem solid red;
+}
+
 .form-join input{
     padding: 0.5rem;
 }
