@@ -29,7 +29,7 @@ footer{
     text-align: center;
 }
 
-#developerData{
+#developer-data{
     display: flex;
     flex-direction: column;
     border-top: 0.05rem dashed var(--tertiary-color);
@@ -58,9 +58,15 @@ h1, h2, p{
     padding-bottom: 1rem;
 }
 
+.cards img[data-src] {
+    filter: blur(0.2em);
+}
+
 .cards img{
     margin-top: 1rem;
     width: 100%;
+    filter: blur(0em);
+    transition: filter 3s;
 }
 
 .cards img:hover{

@@ -2,41 +2,47 @@ const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const prophets = jsonObject['prophets'];
-    prophets.forEach(displayProphets);
-    let imagesToLoad = document.querySelectorAll("img[data-src]");
-    const loadImages = (image) => {
-    image.setAttribute("src", image.getAttribute("data-src"));
-    image.onload = () => {
-        image.removeAttribute("data-src");
-    };
-    };
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        //console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const prophets = jsonObject['prophets'];
+        prophets.forEach(displayProphets);
+        let imagesToLoad = document.querySelectorAll("img[data-src]");
 
-    if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-        items.forEach((item) => {
-        if (item.isIntersecting) {
-            loadImages(item.target);
-            observer.unobserve(item.target);
+        const imgOptions = {
+            threshold: 0,
+            rootMargin: "0px 0px 50px 0px"
+        };
+
+        const loadImages = (image) => {
+            image.setAttribute("src", image.getAttribute("data-src"));
+            image.onload = () => {
+                image.removeAttribute("data-src");
+            };
+        };
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((items, observer) => {
+                items.forEach((item) => {
+                    if (item.isIntersecting) {
+                        loadImages(item.target);
+                        observer.unobserve(item.target);
+                    }
+                });
+            }, imgOptions);
+            imagesToLoad.forEach((img) => {
+                observer.observe(img);
+            });
+        } else {
+            imagesToLoad.forEach((img) => {
+                loadImages(img);
+            });
         }
-        });
     });
-    imagesToLoad.forEach((img) => {
-        observer.observe(img);
-    });
-    } else {
-    imagesToLoad.forEach((img) => {
-        loadImages(img);
-    });
-    }
-});
 
-function displayProphets(prophet){
+function displayProphets(prophet) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -72,7 +78,7 @@ const now = new Date();
 
 //document.getElementById("currentDate").innerHTML = date;
 let date = document.lastModified;
-document.getElementById("lastModified").textContent = date;
+document.getElementById("last-modified").textContent = date;
 //document.getElementById("currentYear").innerHTML = 
 const currentYear = document.querySelector("#year")
 currentYear.textContent = now.getFullYear();
