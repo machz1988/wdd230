@@ -163,7 +163,7 @@
         margin-bottom: 0;
     }
 
-    .directoryMain{
+    .directory-main{
         display: flex;
         flex-direction: column;
     }
