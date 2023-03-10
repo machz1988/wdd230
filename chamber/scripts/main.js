@@ -1,5 +1,5 @@
 // select the elements to manipulate (output to)
-const datefield = document.querySelector("#date");
+const dateField = document.querySelector("#date");
 
 // derive the current date using a date object
 const now = new Date();
@@ -8,15 +8,17 @@ const day = now.getDay();
 
 if ( day == 1 || day == 2){
     const banner = document.querySelector(".banner");
-    banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-    banner.style.backgroundColor = "#EAE0D5";
-    banner.style.textAlign = "center";
-    banner.style.color = "#0A0908";
-    banner.style.padding = "1rem";
+    if (banner !== null){
+        banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+        banner.style.backgroundColor = "#EAE0D5";
+        banner.style.textAlign = "center";
+        banner.style.color = "#0A0908";
+        banner.style.padding = "1rem";
+    }
 }
 
 // long, medium, short options ... try them
-datefield.innerHTML = `<em>${fullDate}</em>`;
+dateField.innerHTML = `<em>${fullDate}</em>`;
 
 function toggleMenu(){
     document.getElementById("main-nav").classList.toggle("open");
