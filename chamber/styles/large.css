@@ -126,12 +126,15 @@
     }
 
     #join-us{
-        display: block;
+        display: flex;
+        flex-direction: column;
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
         border: 00.1rem solid var(--primary-color);
+        align-items: center;
+        text-align: center;
     }
 
     .discover-main{

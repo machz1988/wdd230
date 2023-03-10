@@ -187,8 +187,13 @@ main a:hover{
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
+    right: 0.5rem;
     margin: 0;
-    text-shadow: 0.5rem 0.5rem 0.5rem var(--accent1-color);
+    background-color: var(--primary-color);
+    color: var(--text-on-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    /*text-shadow: 0.2rem 0.2rem 0.2rem var(--primary-color);*/
 }
 
 #call-to-action a{
@@ -281,7 +286,7 @@ footer{
 }
 
 footer img{
-    height: 8rem;
+    height: 6rem;
     margin-top: 0.5rem;
     border-radius: 4rem;
 }
