@@ -1,6 +1,6 @@
 const display = document.querySelector("article");
 
-fetch("scripts/directory.json")
+fetch("directory.json")
     .then(function (response) {
         return response.json();
     })
