@@ -21,9 +21,9 @@ function displayBusiness(business){
     // Change the textContent property of the h2 element to contain the prophet's full name
     h3.textContent = `${business.name}`;
     p1.textContent = `${business.address}`;
-    p2.textContent = `${business.phone_number}`;
+    p2.textContent = `${business.phoneNumber}`;
     a.textContent = "Website";
-    a.href = `${business.web_page}`;
+    a.href = `${business.webPage}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', `${business.logo}`);
