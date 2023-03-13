@@ -1,14 +1,13 @@
 const display = document.querySelector("article");
 
-fetch("directory.json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        //console.log(jsonObject);  // temporary checking for valid response and data parsing
-        const businesses = jsonObject;
-        businesses.forEach(displayBusiness);
-    });
+async function getData(){
+    const response = await fetch("scripts/directory.json");
+    const data = await response.json();
+    //console.log(data);  // temporary checking for valid response and data parsing
+    data.forEach(displayBusiness);
+}
+
+getData();
 
 function displayBusiness(business){
     // Create elements to add to the document
