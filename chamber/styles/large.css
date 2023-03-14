@@ -255,4 +255,22 @@
         grid-column: 1/2;
         align-self: center;
     }
+
+    .contact-main{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact-persons{
+        margin: 0;
+        background-color: var(--tertiary-color);
+        color: var(--text-on-color);
+    }
+
+    .contact-application{
+        justify-self: start;
+        align-self: start;
+    }
+
+    
 }

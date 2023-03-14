@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Contact us!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Contact page">
+    <title>Contact us!</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
 </head>
 <body>
     <header>
-        <div id="nameEnterprise">
+        <div id="name-enterprise">
             <img src="images/logo.webp" alt="Eraxamani Chamber Logo">
             <h1>Eraxamani Chamber</h1>
         </div>
-        <div id="socialMedia">
-            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="facebook logo"></a>
-            <a href="https://www.linkedin.com/feed/"><img src="images/linkedin-logo.png" alt="linkedin logo"></a>
-        </div>
-        <button id="hamButton"><span>&#9776;</span><span>X</span></button>
+        <button id="ham-button"><span>&#9776;</span><span>X</span></button>
         <nav>
-            <ul id="mainNav">
+            <ul id="main-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>    
                 <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="facebook logo">Facebook</a></li>    
+                <li><a href="https://www.linkedin.com/feed/"><img src="images/linkedin-logo.png" alt="linkedin logo">LinkedIn</a></li>
             </ul>
         </nav>
         <div id="date">
@@ -39,40 +37,78 @@
         </div>
     </header>
     <main class="contact-main">
-        <h1 class="contact-h1">Contact us!</h1>
-        <form class="contact-form" method="get" action="received.html">
-            <label for="first-name">First name:</label>
-            <input id="first-name" name="first-name" type="text" autofocus required>
-            <label for="last-name">Last name:</label>
-            <input id="last-name" name="last-name" type="text" required>
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email" placeholder="myemail@example.com" required>
-            <label for="cell-phone">Cell phone number:</label>
-            <input id="cell-phone" name="cell-phone" type="tel" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea> 
-            <input id="sent-date" name="sent-date" type="hidden">
-            <input id="submit" name="submit" type="submit" value="Send message">
-        </form>
+        <section class="contact-persons">
+            <h2 class="contact-h2">Execute Board</h2>
+            <div>
+                <h3>Tomas Saucedo</h3>
+                <ul>
+                    <li>President</li>
+                    <li>president@eraxamani.org</li>
+                    <li>+52 (355) 325-5671</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Melissa Silva</h3>
+                <ul>
+                    <li>Office Manager</li>
+                    <li>manager@eraxamani.org</li>
+                    <li>+52 (355) 326-5671</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Alma Hernandez</h3>
+                <ul>
+                    <li>VP Sales</li>
+                    <li>sales@eraxamani.org</li>
+                    <li>+52 (355) 327-5671</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Cecilia Gregorio</h3>
+                <ul>
+                    <li>VP Finance</li>
+                    <li>finance@eraxamani.org</li>
+                    <li>+52 (355) 328-5671</li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-application">
+            <h2 class="contact-h2">Contact us!</h1>
+            <form class="contact-form" method="get" action="received.html">
+                <label for="first-name">First name:</label>
+                <input id="first-name" name="firstName" type="text" autofocus required>
+                <label for="last-name">Last name:</label>
+                <input id="last-name" name="lastName" type="text" required>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="myemail@example.com" required>
+                <label for="cell-phone">Cell phone number:</label>
+                <input id="cell-phone" name="cellPhone" type="tel" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea> 
+                <input id="sent-date" name="sentDate" type="hidden">
+                <input id="submit" name="submit" type="submit" value="Send message">
+            </form>
+        </section>
     </main>
     <footer>
         <picture><img src="images/logo.webp" alt="Eraxamani Chamber logo" ></picture>
         <div>
             <span>Eraxamani Chamber</span>
-            <span>1 May 5th Street</span>
-            <span>Chilchota Michoacan 59792</span>
+            <span>140 Aquiles Serdan Street</span>
+            <span>Chilchota Michoacan 59780</span>
         </div>
         <div>
             <span>info@eraxamani.org</span>
             <span>+52 (355) 324-5671</span>
-            <span>Location Map</span>
+            <span class="span-with-link"><a href="https://goo.gl/maps/9F2CT1wtWXnECLPw6">Location Map</a></span>
         </div>
-        <div id="developerData">
+        <div id="developer-data">
             <span>&copy;<span id="year"></span> Eraxamani Chamber</span>
             <span>Manuel Cipriano</span>
             <span>WDD 230 Project</span>
-            <span>Last Modification: <span id="lastModified"></span></span>
-            <p>Your last visit was: <span class="lastVisit"> days ago</span></p>
+            <span>Last Modification: <span id="last-modified"></span></span>
+            <p>Your last visit was: <span id="last-visit"> days ago</span></p>
+            <span class="span-with-link">Weather provided by    <a href="https://openweathermap.org/">Open Weather Map</a></span>
         </div>
     </footer>
     <script src="scripts/main.js"></script>
