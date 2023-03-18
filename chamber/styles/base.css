@@ -200,6 +200,22 @@ main a:hover{
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    animation: 4s linear 0s infinite alternate running my-scale; 
+}
+
+@keyframes my-rotate{
+    to{
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes my-scale{
+    from{
+        transform: scale(0.8, 0.8);
+    }
+    to{
+        transform: scale(1.2, 1.2);
+    }
 }
 
 #event{
