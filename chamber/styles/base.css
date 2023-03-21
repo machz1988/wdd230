@@ -9,7 +9,7 @@
     --primary-color: #0A0908;
     --secondary-color: #5E503F;
     /*--tertiary-color: #22333B;*/
-    --tertiary-color: #22333B;
+    --tertiary-color: #E0EBE7;
     --accent1-color: #EAE0D5;
     /*--accent1-color: #EAE0D5;*/
     --accent2-color: #C6AC8F;
@@ -189,11 +189,11 @@ main a:hover{
     left: 0.5rem;
     right: 0.5rem;
     margin: 0;
-    background-color: var(--primary-color);
-    color: var(--text-on-color);
+    background-color: var(--white-color);
+    color: var(--text-color);
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    /*text-shadow: 0.2rem 0.2rem 0.2rem var(--primary-color);*/
+    /*border-radius: 0.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--primary-color);*/
 }
 
 #call-to-action a{
@@ -213,13 +213,17 @@ main a:hover{
     from{
         transform: scale(0.8, 0.8);
     }
-    to{
+    50%{
         transform: scale(1.2, 1.2);
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(180deg);
     }
 }
 
 #event{
-    border-bottom: 0.1rem solid var(--primary-color);
+    border-bottom: 0.2rem solid var(--tertiary-color);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -229,7 +233,7 @@ main a:hover{
 }
 
 #weather{
-    border-bottom: 0.1rem solid var(--primary-color);
+    border-bottom: 0.2rem solid var(--tertiary-color);
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
@@ -238,7 +242,7 @@ main a:hover{
 }
 
 #release {
-    border-bottom: 0.1rem solid var(--primary-color);
+    border-bottom: 0.2rem solid var(--tertiary-color);
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
@@ -250,17 +254,15 @@ main a:hover{
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-bottom: 0.1rem solid var(--primary-color);
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-
 .spotlight:nth-child(1){
     /*flex-grow: 1;*/
     padding: 0.5rem;
-    border-bottom: 0.05rem dashed var(--primary-color);
+    border-bottom: 0.1rem solid var(--tertiary-color);
 }
 
 .spotlight:nth-child(2){
@@ -286,6 +288,14 @@ main a:hover{
 .spotlight:nth-child(3) div{
     display: flex;
     flex-direction: column;
+}
+
+.spotlight img{
+    max-width: 7rem;
+}
+
+.spotlight a{
+    margin: 1rem auto 0 auto;
 }
 
 #join-us{
@@ -366,7 +376,6 @@ footer a:hover{
 }
 
 .discover-section{
-    /*border-bottom: 0.1rem solid var(--primary-color);*/
     padding: 1rem;
 }
 
@@ -379,7 +388,7 @@ footer a:hover{
 }
 
 .discover-article{
-    border-bottom: 0.1rem solid var(--primary-color);
+    border-top: 0.2rem solid var(--tertiary-color);
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -389,7 +398,7 @@ footer a:hover{
 }
 
 .join-benefits{
-    border-bottom: 0.1rem solid var(--primary-color);
+    border-bottom: 0.2rem solid var(--tertiary-color);
 }
 
 .join-benefits, .join-application{
@@ -483,6 +492,7 @@ footer a:hover{
     flex-direction: column;
     padding-left: 1rem;
     padding-right: 1rem;
+    border-top: 0.2rem solid var(--tertiary-color);
 }
 
 .contact-form{
@@ -554,7 +564,7 @@ footer a:hover{
 .grid section{
     padding: 1rem;
     padding-bottom: 1.5rem;
-    border-top: 0.1rem solid var(--primary-color);
+    border-top: 0.2rem solid var(--tertiary-color);
 }
 
 .grid img{
@@ -571,7 +581,7 @@ footer a:hover{
     display: grid;
     grid-template-columns: 4rem 1fr;
     column-gap: 0.5rem;
-    border-top: 0.1rem solid var(--primary-color);
+    border-top: 0.2rem solid var(--tertiary-color);
     padding: 0.5rem;
 }
 

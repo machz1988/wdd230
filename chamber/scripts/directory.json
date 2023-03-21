@@ -1,21 +1,14 @@
 [
     {
-        "name": "Eratzin Solutions",
-        "address": "1 May 5th Street, Ichan Michoacan 59792",
-        "phoneNumber": "(351) 304 - 4002",
-        "webPage": "https://eratzinsolutions.com",
-        "logo": "images/eratzin-solutions.png",
-        "membershipLevel": "Gold",
-        "joinDate": "July 1, 2018 13:30:00"
-    },
-    {
         "name": "Korita Handicrafts",
         "address": "57 Lopez Mateos Street, Ichan Michoacan 59792",
         "phoneNumber": "(33) 1367 - 6900",
         "webPage": "https://koritahandicrafts.com",
         "logo": "images/korita-handicrafts.png",
         "membershipLevel": "Silver",
-        "joinDate": "January 1, 2014 16:30:00"
+        "joinDate": "January 1, 2014 16:30:00",
+        "slogan": "Plaster banks for everyone!",
+        "email": "info@koritahandicrafts.com"
     },
     {
         "name": "Lolita’s Grocery Store",
@@ -24,7 +17,9 @@
         "webPage": "https://lolitags.com",
         "logo": "images/lolitas-grocery-store.png",
         "membershipLevel": "Silver",
-        "joinDate": "February 1, 2020 18:30:00"
+        "joinDate": "February 1, 2020 18:30:00",
+        "slogan": "Groceries for your family!",
+        "email": "info@lolitags.com"
     },
     {
         "name": "Martina’s Bakery",
@@ -33,7 +28,9 @@
         "webPage": "https://martinasbakery.com",
         "logo": "images/martinas-bakery.png",
         "membershipLevel": "NP",
-        "joinDate": "March 1, 2021 15:30:00"
+        "joinDate": "March 1, 2021 15:30:00",
+        "slogan": "Bread for your family!",
+        "email": "info@martinasbakery.com"
     },
     {
         "name": "Huanto’s Clay Crafts",
@@ -42,7 +39,9 @@
         "webPage": "https://huantosclaycrafts.com",
         "logo": "images/huantos-clay-crafts.png",
         "membershipLevel": "Bronze",
-        "joinDate": "June 1, 2022 17:30:00"
+        "joinDate": "June 1, 2022 17:30:00",
+        "slogan": "Traditional handicrafts!",
+        "email": "info@huantosclaycrafts.com"
     },
     {
         "name": "Julio’s Barber Shop",
@@ -51,7 +50,9 @@
         "webPage": "https://juliosbarbershop.com",
         "logo": "images/julios-barber-shop.png",
         "membershipLevel": "Bronze",
-        "joinDate": "August 1, 2020 12:30:00"
+        "joinDate": "August 1, 2020 12:30:00",
+        "slogan": "We care your hair!",
+        "email": "info@juliosbarbershop.com"
     },
     {
         "name": "Serrano’s Building Materials Store",
@@ -60,7 +61,9 @@
         "webPage": "https://serranosbms.com",
         "logo": "images/serranos-building-materials-store.png",
         "membershipLevel": "Silver",
-        "joinDate": "October 15, 2019 11:30:00"
+        "joinDate": "October 15, 2019 11:30:00",
+        "slogan": "We care your house!",
+        "email": "info@serranosbms.com"
     },
     {
         "name": "Ivan’s Computer Store",
@@ -69,7 +72,9 @@
         "webPage": "https://ivanscomputerstore.com",
         "logo": "images/ivans-computer-store.png",
         "membershipLevel": "Gold",
-        "joinDate": "November 15, 2015 15:30:00"
+        "joinDate": "November 15, 2015 15:30:00",
+        "slogan": "Tech accesories for everyone!",
+        "email": "info@ivanscomputerstore.com"
     },
     {
         "name": "Lizeth’s Clothing Store",
@@ -78,7 +83,9 @@
         "webPage": "https://lizethsclothingstore.com",
         "logo": "images/lizeths-clothing-store.png",
         "membershipLevel": "NP",
-        "joinDate": "December 1, 2020 19:30:00"
+        "joinDate": "December 1, 2020 19:30:00",
+        "slogan": "Clothes for your family!",
+        "email": "info@lolitags.com"
     },
     {
         "name": "Pepe’s Seafood",
@@ -87,7 +94,9 @@
         "webPage": "https://pepesseafood.com",
         "logo": "images/pepes-seafood.png",
         "membershipLevel": "Silver",
-        "joinDate": "September 1, 2022 16:30:00"
+        "joinDate": "September 1, 2022 16:30:00",
+        "slogan": "The flavor of the sea!",
+        "email": "info@pepesseafood.com"
     },
     {
         "name": "Mary’s Shoe Store",
@@ -96,6 +105,8 @@
         "webPage": "https://enriquesshoestore.com",
         "logo": "images/marys-shoe-store.png",
         "membershipLevel": "Bronze",
-        "joinDate": "April 1, 2021 17:30:00"
+        "joinDate": "April 1, 2021 17:30:00",
+        "slogan": "Shoes for your family!",
+        "email": "info@enriquesshoestore.com"
     }
 ]

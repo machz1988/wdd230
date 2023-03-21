@@ -52,9 +52,10 @@
         grid-row-end: 3;
         grid-column-start: 2;
         grid-column-end: 4;
-        /*height: fit-content;*/
         border-bottom: none;
-        border: 00.1rem solid var(--primary-color);
+
+        /*height: fit-content;
+        border: 00.1rem solid var(--primary-color);*/
     }
 
     
@@ -68,9 +69,10 @@
         grid-row-end: 4;
         grid-column-start: 2;
         grid-column-end: 4;
-        border: 00.1rem solid var(--primary-color);
+        /*border: 00.1rem solid var(--primary-color);*/
         background-color: var(--tertiary-color);
-        color: var(--text-on-color);
+        color: var(--text-color);
+        border: none;
     }
 
     #spotlights{
@@ -81,7 +83,7 @@
         flex-direction: column;
         padding: 0rem;
         background-color: var(--white-color);
-        border: 0.1rem solid var(--primary-color);
+        border: 0.2rem solid var(--tertiary-color);
         padding: 1rem;
     }
 
@@ -89,7 +91,7 @@
         width: 100%;
         padding-bottom: 1rem;
         border-right: 0rem;
-        border-bottom: 0.05rem dashed var(--primary-color);
+        border-bottom: 0.1rem solid var(--tertiary-color);
         color: var(--text-color);
     }
 
@@ -98,7 +100,7 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
         border-right: 0rem;
-        border-bottom: 0.05rem dashed var(--primary-color);
+        border-bottom: 0.1rem solid var(--tertiary-color);
         color: var(--text-color);
     }
 
@@ -113,7 +115,7 @@
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-        border: 00.1rem solid var(--primary-color);
+        border: 0.2rem solid var(--tertiary-color);
         background-color: var(--white-color);
     }
     
@@ -122,7 +124,7 @@
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 2;
-        border: 00.1rem solid var(--primary-color);
+        border: 0.2rem solid var(--tertiary-color);
     }
 
     #join-us{
@@ -132,7 +134,7 @@
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
-        border: 00.1rem solid var(--primary-color);
+        border: 0.2rem solid var(--tertiary-color);
         align-items: center;
         text-align: center;
     }
@@ -158,7 +160,7 @@
 
     .discover-section:nth-child( even ) {
         background-color: var(--tertiary-color);
-        color: var(--text-on-color);
+        color: var(--text-color);
     }
 
     .discover-images{
@@ -213,10 +215,13 @@
 
     .join-benefits{
         grid-column: 2/3;
-        border: 0.1rem solid var(--primary-color);
+        /*border: 0.1rem solid var(--primary-color);*/
+        border: none;
+        border-radius: 1rem;
         max-width: 40rem;
         background-color: var(--tertiary-color);
-        color: var(--text-on-color);
+        color: var(--text-color);
+
     }
 
     .join-application{
@@ -264,12 +269,15 @@
     .contact-persons{
         margin: 0;
         background-color: var(--tertiary-color);
-        color: var(--text-on-color);
+        color: var(--text-color);
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .contact-application{
         justify-self: start;
         align-self: start;
+        border: none;
     }
 
     
